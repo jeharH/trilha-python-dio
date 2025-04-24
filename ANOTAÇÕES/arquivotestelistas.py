@@ -1,8 +1,10 @@
-numeros = [1, 4, 7, 9, 34, 66, 77, 99, 10, 44]
-pares = []
+import requests
 
-for par in numeros:
-    if par % 2 == 0:
-        pares.append(par)
+url = "https://official-joke-api.appspot.com/random_joke"
+resposta = requests.get(url)
 
-print(pares)
+if resposta.status_code == 200:
+    piada = resposta.json()
+    print(f"{piada['setup']}\n{piada['punchline']}")
+else:
+    print("Erro ao buscar a piada.")
