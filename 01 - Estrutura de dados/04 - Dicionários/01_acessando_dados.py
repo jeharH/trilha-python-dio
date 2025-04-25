@@ -1,10 +1,10 @@
 dados = {"nome": "Guilherme", "idade": 28, "telefone": "3333-1234"}
 
-print(dados["nome"])  # "Guilherme"
+print(dados["nome"])  # "Guilherme"   # ACESSANDO DADOS #
 print(dados["idade"])  # 28
 print(dados["telefone"])  # "3333-1234"
 
-dados["nome"] = "Maria"
+dados["nome"] = "Maria" # SUBSTITUINDO DADOS #
 dados["idade"] = 18
 dados["telefone"] = "9988-1781"
 
