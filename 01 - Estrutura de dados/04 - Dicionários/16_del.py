@@ -5,8 +5,11 @@ contatos = {
     "melaine@gmail.com": {"nome": "Melaine", "telefone": "3333-7766"},
 }
 
-del contatos["guilherme@gmail.com"]["telefone"]
-del contatos["chappie@gmail.com"]
+del contatos["guilherme@gmail.com"]["telefone"] # remove o TELEFONE 
+del contatos["chappie@gmail.com"] # remove a variável completa
 
 # {'guilherme@gmail.com': {'nome': 'Guilherme'}, 'giovanna@gmail.com': {'nome': 'Giovanna', 'telefone': '3443-2121'}, 'melaine@gmail.com': {'nome': 'Melaine', 'telefone': '3333-7766'}}  # noqa
 print(contatos)
+
+# é passado para o del o objeto que eu quero remover
+# e del(contatos) apaga o dicionário inteiro

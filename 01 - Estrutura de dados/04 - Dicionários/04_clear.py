@@ -7,3 +7,5 @@ contatos = {
 
 contatos.clear()
 print(contatos)  # {}
+
+# limpa o dicionario

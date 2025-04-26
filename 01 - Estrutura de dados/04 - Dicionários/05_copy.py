@@ -6,3 +6,5 @@ copia["guilherme@gmail.com"] = {"nome": "Gui"}
 print(contatos["guilherme@gmail.com"])  # {"nome": "Guilherme", "telefone": "3333-2221"}
 
 print(copia["guilherme@gmail.com"])  # {"nome": "Gui"}
+
+# cria uma cópia do dicionário para outra variável

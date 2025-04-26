@@ -12,7 +12,10 @@ resultado = "megui@gmail.com" in contatos  # False
 print(resultado)
 
 resultado = "idade" in contatos["guilherme@gmail.com"]  # False
-print(resultado)
+print(resultado) # verifica se IDADE existe dentro do dicionario INTERNO
 
 resultado = "telefone" in contatos["giovanna@gmail.com"]  # True
 print(resultado)
+
+# verifica se uma chave existe ou não dentro do dicionario
+# retorna True ou False
