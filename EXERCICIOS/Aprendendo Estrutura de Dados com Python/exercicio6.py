@@ -3,4 +3,6 @@
 # - Quais hobbies elas têm em comum (interseção)
 # - Todos os hobbies possíveis (união)
 
-hobbie_jehar = {'estudar'}
+hobbie_jehar = {'estudar', 'assistir'}
+hobbie_yago = {'jogar', 'comprar'}
+

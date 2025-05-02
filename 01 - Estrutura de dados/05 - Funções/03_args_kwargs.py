@@ -1,8 +1,8 @@
 def exibir_poema(data_extenso, *args, **kwargs):
-    texto = "\n".join(args)
-    meta_dados = "\n".join([f"{chave.title()}: {valor}" for chave, valor in kwargs.items()])
-    mensagem = f"{data_extenso}\n\n{texto}\n\n{meta_dados}"
-    print(mensagem)
+    texto = "\n".join(args) # o .join concatena todas as strings de args, e o '\n' separa cada por linha
+    meta_dados = "\n".join([f"{chave.title()}: {valor}" for chave, valor in kwargs.items()]) # nessa linha, o kwargs.items() pega os valores 'chave:valor' e itera os mesmo, com o for, jogando as chaves na variavel CHAVE e os valores na variável VALOR. Depois é exibido a chave com .title deixando os valores da chave com a primeira letra maiuscula e em seguida é exibido o valor da chave. Todos esses valores são concatenados com o .join e colocados um em cada linha com o '\n'
+    mensagem = f"{data_extenso}\n\n{texto}\n\n{meta_dados}" # cria a variável mensagem e coloca dentro dela a exibição da data_extenso, pula duas linhas, texto, pula duas linhas, meta_dados
+    print(mensagem) # exibe a varável mensagem
 
 
 exibir_poema(
@@ -28,4 +28,9 @@ exibir_poema(
     "Namespaces are one honking great idea -- let's do more of those!",
     autor="Tim Peters",
     ano=1999,
-)
+) # chama a função, passando os dados requisitados na função (data_extenso, *args, **kwargs)
+
+
+# a primeira linha e coloca no parametro: data_extenso
+# os proximos valores separarados por virgula, entram todos dentro de *args
+# os valores 'chave : valor' entram dentro de **kwargs
