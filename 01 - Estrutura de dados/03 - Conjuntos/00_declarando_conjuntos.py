@@ -8,6 +8,6 @@ carros = set(("palio", "gol", "celta", "palio"))
 print(carros)  # {"gol", "celta", "palio"}
 
 linguagens = {'python', 'java', 'python'}
-print(linguagens)
+print(linguagens)   
 
 # é possível declarar conjuntos com o SET ou diretamente com CHAVES
